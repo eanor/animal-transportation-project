@@ -24,7 +24,6 @@ This project implements an end-to-end solution for animal transport consultation
 | `prepare_training_data.py` | Converts raw shipment CSV into training examples for LLM fine-tuning |
 | `train_llm.py` | Fine-tunes TinyLlama on the prepared dataset using LoRA |
 | `animal_transportation_service_report.pdf` | A report paper for the project |
-| `requirements.txt` | Python dependencies |
 
 ## Dataset Format
 
