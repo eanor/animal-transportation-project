@@ -1,7 +1,3 @@
-# animal-transportation-project
-------------------------------------------------------------
-A project for animal transportation service
-
 # Animal Transport Advisor
 
 A machine learning system that provides transport recommendations for animals based on photographs and route information. The system combines computer vision for species identification with a fine-tuned language model (TinyLlama-1.1B) trained on shipment data from , that was augmented for the task specifics (added random weight for cargo from 1kg to 1000kg and added random cities for countries data for more specified shipment details), and animal welfare guidelines.
