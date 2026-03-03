@@ -17,10 +17,13 @@ PROCESSING REQUEST...
 
 ============================================================
 STEP 1: Identifying animal...
+
   → Animal: cow (confidence: 96.2%)
 
 STEP 2: Analyzing transport options...
+
   → Found 4 similar shipments
+  
   → Distance: 1949 km
 
 STEP 3: Generating recommendation with fine-tuned model...
