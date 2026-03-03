@@ -49,6 +49,7 @@ python main_service.py --image cow.jpg --origin "Sydney" --destination "Mumbai"
 
 ## Interface example
 
+```python
 MENU:
 1. Get transport recommendation
 2. Exit
