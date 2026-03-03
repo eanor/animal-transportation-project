@@ -2,6 +2,9 @@
 ------------------------------------------------------------
 A project for animal transportation service
 
+
+## Interface example
+
 MENU:
 1. Get transport recommendation
 2. Exit
