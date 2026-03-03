@@ -9,7 +9,9 @@ MENU:
 Choose (1-2): 1
 
 Path to animal photo: cow_01.jpg
+
 Origin city: Sydney
+
 Destination city: Mumbai
 
 ============================================================
