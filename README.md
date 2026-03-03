@@ -1,6 +1,6 @@
 # Animal Transport Advisor
 
-A machine learning system that provides transport recommendations for animals based on photographs and route information. The system combines computer vision for species identification with a fine-tuned language model (TinyLlama-1.1B) trained on shipment data from , that was augmented for the task specifics (added random weight for cargo from 1kg to 1000kg and added random cities for countries data for more specified shipment details), and animal welfare guidelines.
+A machine learning system that provides transport recommendations for animals based on photographs and route information. The system combines computer vision for species identification with a fine-tuned language model (TinyLlama-1.1B) trained on shipment data from https://www.kaggle.com/datasets/nicolemachado/transportation-and-logistics-tracking-dataset, that was augmented for the task specifics (added random weight for cargo from 1kg to 1000kg and added random cities for countries data for more specified shipment details), and animal welfare guidelines.
 
 ## Overview
 
