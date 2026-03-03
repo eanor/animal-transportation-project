@@ -14,6 +14,7 @@ Destination city: Mumbai
 
 ============================================================
 PROCESSING REQUEST...
+
 ============================================================
 STEP 1: Identifying animal...
   → Animal: cow (confidence: 96.2%)
@@ -26,6 +27,7 @@ STEP 3: Generating recommendation with fine-tuned model...
 
 ============================================================
 FINAL RECOMMENDATION
+
 ============================================================
 Based on historical shipment data and animal welfare guidelines, recommended best transport option: Sea transport. Expected duration and cost breakdown: 3.9 days at cost $1949. Potential risks and mitigation strategies: avoid mixing unfamiliar animals. Additional notes: Stress increases when mixed with unfamiliar animals. Mortality increases beyond 100km. Recommendations:
 1. Seek transport recommendation from professional transport agent
