@@ -46,10 +46,11 @@ The system expects a CSV file (`train_data.csv`) with the following columns:
 ```python
 # Alternative: Command line usage
 python main_service.py --image cow.jpg --origin "Sydney" --destination "Mumbai"
+```
 
 ## Interface example
 
-```python
+```java
 MENU:
 1. Get transport recommendation
 2. Exit
@@ -102,3 +103,4 @@ Based on historical shipment data and animal welfare guidelines, recommended bes
 Press Enter to continue...
 
 ------------------------------------------------------------
+```
