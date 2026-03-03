@@ -2,6 +2,54 @@
 ------------------------------------------------------------
 A project for animal transportation service
 
+# Animal Transport Advisor
+
+A machine learning system that provides transport recommendations for animals based on photographs and route information. The system combines computer vision for species identification with a fine-tuned language model (TinyLlama-1.1B) trained on shipment data from , that was augmented for the task specifics (added random weight for cargo from 1kg to 1000kg and added random cities for countries data for more specified shipment details), and animal welfare guidelines.
+
+## Overview
+
+This project implements an end-to-end solution for animal transport consultation:
+- **Animal identification** from photographs using ResNet50
+- **Transport mode recommendations** based on partially modded shipment pattern data
+- **Cost and duration estimates** derived from similar past shipments
+- **Welfare considerations** integrated from EU regulations and literature on animal welfare
+
+## Files Description
+
+| File | Description |
+|------|-------------|
+| `shipment_service.ipynb` | Main Jupyter notebook for Colab - contains all code and interactive interface |
+| `animal_classifier.py` | ResNet50-based classifier for identifying animal species from images |
+| `transport_advisor.py` | Analyzes historical shipment data to find similar transports and calculate statistics |
+| `welfare_guidelines.py` | Database of animal welfare requirements from EU Regulation 1/2005 and scientific studies |
+| `llm_service.py` | Fine-tuned TinyLlama model for generating natural language recommendations |
+| `main_service.py` | Orchestrates all components: classification, analysis and recommendation generation |
+| `run_interactive.py` | Interactive command-line interface for testing |
+| `prepare_training_data.py` | Converts raw shipment CSV into training examples for LLM fine-tuning |
+| `train_llm.py` | Fine-tunes TinyLlama on the prepared dataset using LoRA |
+| `requirements.txt` | Python dependencies |
+
+## Dataset Format
+
+The system expects a CSV file (`train_data.csv`) with the following columns:
+- `Shipment_ID`, `Origin_Country`, `Destination_Country`, `Shipment_Date`, `Actual_Arrival_Date`
+- `Transport_Mode`, `Carrier_Name`, `Declared_Value_USD`, `Tariff_Category`
+- `Route_Risk_Index`, `Inspection_Type`, `Delay_Reason`, `Customs_Delay_Days`
+- `Risk_Flag`, `Origin_City`, `Destination_City`, `Weight`
+
+## Quick Start in Google Colab
+
+1. Open `shipment_service.ipynb` in Google Colab
+2. Upload your `train_data.csv` file
+3. Run all cells in order:
+   - Cell 1: Install dependencies
+   - Cell 2: Prepare training data
+   - Cell 3: Train the model (or skip if using pre-trained)
+   - Cell 4: Run interactive service
+
+```python
+# Alternative: Command line usage
+python main_service.py --image cow.jpg --origin "Sydney" --destination "Mumbai"
 
 ## Interface example
 
